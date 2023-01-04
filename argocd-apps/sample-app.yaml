@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: sample-project
   source:
-    path: applications/sample-app/
+    path: applications/sample-app/chart/
     repoURL: https://github.com/maryamagno-affinity/argocd.git
     targetRevision: HEAD
   syncPolicy:
