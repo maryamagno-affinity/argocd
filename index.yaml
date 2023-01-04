@@ -6,10 +6,10 @@ entries:
         - "[Removed]: Legacy API versions for Ingresses"
     apiVersion: v2
     appVersion: v2.5.5
-    created: "2023-01-04T11:35:49.868952-05:00"
+    created: "2023-01-04T12:57:23.997454-05:00"
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: 04fbcf879e2f109c8cc97b97a7f0a73b37e60c5971c218f234ac93fee59ec63a
+    digest: 37072304b91371ad22e49d79773268ef0ea4cafa7fbc7784d136e919d074ce9f
     home: https://github.com/argoproj/argo-helm
     icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
     keywords:
@@ -27,4 +27,4 @@ entries:
     urls:
     - https://github.com/maryamagno-affinity/argocd/blob/main/argo-cd-5.16.13.tgz
     version: 5.16.13
-generated: "2023-01-04T11:35:49.861803-05:00"
+generated: "2023-01-04T12:57:23.990529-05:00"
