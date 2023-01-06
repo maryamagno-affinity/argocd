@@ -16,16 +16,16 @@ metadata:
 {{- end }}
 spec:
   ports:
-  - name: {{ .Values.dex.servicePortHttpName }}
+  - name: http
     protocol: TCP
     port: {{ .Values.dex.servicePortHttp }}
     targetPort: http
-  - name: {{ .Values.dex.servicePortGrpcName }}
+  - name: grpc
     protocol: TCP
     port: {{ .Values.dex.servicePortGrpc }}
     targetPort: grpc
 {{- if .Values.dex.metrics.enabled }}
-  - name: {{ .Values.dex.metrics.service.portName }}
+  - name: metrics
     protocol: TCP
     port: {{ .Values.dex.servicePortMetrics }}
     targetPort: metrics
