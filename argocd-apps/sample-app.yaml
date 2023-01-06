@@ -14,7 +14,6 @@ spec:
     targetRevision: HEAD
     helm:
       passCredentials: false # If true then adds --pass-credentials to Helm commands to pass credentials to all domains
-      releaseName: aff-sample-app
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
