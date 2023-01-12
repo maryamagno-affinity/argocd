@@ -2,5 +2,8 @@ dependencies:
 - name: argo-cd
   repository: https://argoproj.github.io/argo-helm
   version: 5.16.14
-digest: sha256:02217236da24b04e2af8fc51180e91ae683f1bc9a1fedd794cfd54c52a07a882
-generated: "2023-01-06T16:29:19.681994-05:00"
+- name: test-1
+  repository: file://charts/test-1
+  version: 0.1.0
+digest: sha256:900fe3400d30fc75d11d293ccfcdc1f4d7234beffcea800e6ca3da7efc2808b0
+generated: "2023-01-12T18:43:56.442026-05:00"

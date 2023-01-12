@@ -64,3 +64,6 @@ argo-cd:
         kind: '*'
       orphanedResources:
         warn: false
+
+test-1:
+  enabled: true

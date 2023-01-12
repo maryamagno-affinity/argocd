@@ -6,3 +6,7 @@ dependencies:
   - name: argo-cd
     version: 5.16.14
     repository: https://argoproj.github.io/argo-helm
+  - name: test-1
+    version: 0.1.0
+    repository: file://charts/test-1
+    condition: test-1.enabled
