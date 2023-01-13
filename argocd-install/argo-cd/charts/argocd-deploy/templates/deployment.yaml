@@ -20,17 +20,10 @@ spec:
         app: {{ template "helm-guestbook.name" . }}
         release: {{ .Release.Name }}
     spec:
-      volumes:
-        - name: shoryuken
-          configMap:
-            name: shoryuken
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          volumeMounts:
-          - name: shoryuken
-            mountPath: "/etc/configmap-volume"
           ports:
             - name: http
               containerPort: 80
