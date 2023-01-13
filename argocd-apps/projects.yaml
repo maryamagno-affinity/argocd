@@ -11,4 +11,4 @@ spec:
     path: argocd-projects
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: test-namespace
+    namespace: argocd
