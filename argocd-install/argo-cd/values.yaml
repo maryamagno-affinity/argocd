@@ -14,21 +14,22 @@ argo-cd:
   server:
     replicas: 3
     additionalProjects: 
-    - name: argocd
-      namespace: argocd
-      additionalLabels: {}
-      additionalAnnotations: {}
-      description: Argocd Project
-      sourceRepos:
-      - '*'
-      destinations:
-      - namespace: argocd
-        server: https://kubernetes.default.svc
-      clusterResourceWhitelist:
-      - group: '*'
-        kind: '*'
-      orphanedResources:
-        warn: false
+      - name: argocd
+        namespace: argocd
+        additionalLabels: {}
+        additionalAnnotations: {}
+        description: Argocd Project
+        sourceRepos:
+        - '*'
+        destinations:
+        - namespace: argocd
+          server: https://kubernetes.default.svc
+        clusterResourceWhitelist:
+        - group: '*'
+          kind: '*'
+        orphanedResources:
+          warn: false
 
 test-1:
   enabled: true
+  
