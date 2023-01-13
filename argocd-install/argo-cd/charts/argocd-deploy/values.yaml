@@ -5,7 +5,6 @@ enabled: false
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-test: testLabel
 replicaCount: 1
 
 image:
@@ -16,7 +15,8 @@ image:
 service:
   type: ClusterIP
   port: 80
-
+  test: testLabel
+  
 ingress:
   enabled: false
   annotations: {}
